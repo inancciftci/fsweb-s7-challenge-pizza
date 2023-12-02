@@ -1,0 +1,110 @@
+section.top-menus {
+  margin: 5rem 0;
+}
+
+.text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+}
+
+.text-ad {
+  font-family: "Satisfy", cursive;
+  text-transform: lowercase;
+  color: #ce2829;
+  font-size: 3.2rem;
+}
+
+.title-ad {
+  color: #292929;
+  font-size: 4.2rem;
+}
+
+.menu-box {
+  margin: 3rem 0;
+}
+
+.menu-title-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.category-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 5rem;
+  padding: 1rem 3rem;
+  cursor: pointer;
+}
+
+.category-item.active,
+.category-item.active .category-title {
+  color: white;
+  background-color: #292929;
+}
+
+.category-item img {
+  width: 42px;
+  height: 42px;
+  margin-right: 2rem;
+}
+
+.category-title {
+  color: black;
+  font-size: 1.8rem;
+}
+
+.category-foods {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5rem 0;
+}
+
+.food-card {
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  background-color: white;
+  color: #292929;
+  border-radius: 0.3rem;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+.food-title {
+  width: 100%;
+  font-size: 2.2rem;
+  text-align: left;
+  margin: 1rem 0;
+}
+
+.food-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.6rem;
+  width: 100%;
+}
+
+.food-info-price {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.food-card img {
+  width: 90%;
+  transition: all 0.3s ease-in-out;
+}
+
+.food-card img:hover {
+  scale: 1.05;
+}

@@ -1,0 +1,33 @@
+.categories {
+  display: flex;
+  font-size: 1.8rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+section.category {
+  background-color: white;
+}
+
+.category-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.category-box:hover {
+  background-color: #ce2829;
+  border-radius: 0.5rem;
+  scale: 1.1;
+  color: white;
+  cursor: pointer;
+}
+
+.category-img {
+  width: 42px;
+  height: 42px;
+  margin-right: 1.5rem;
+}

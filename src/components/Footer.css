@@ -1,0 +1,94 @@
+footer {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 5rem 0 2rem 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-left {
+  width: 50%;
+  display: flex;
+}
+
+.footer-logo {
+  width: 250px;
+  margin-bottom: 3rem;
+}
+
+.footer-right {
+  width: 25%;
+}
+
+.footer-left-first {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-left-first ul li {
+  list-style: none;
+  display: flex;
+  margin-top: 2rem;
+}
+
+.footer-left-first ul li img {
+  width: 28px;
+  height: 28px;
+}
+
+.company-info-icon {
+  margin-right: 1rem;
+}
+
+.company-info-text {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+.footer-left-second {
+  width: 50%;
+}
+
+.footer-left-second ul li {
+  list-style: none;
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  font-weight: 300;
+}
+
+.footer-title {
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-bottom: 5rem;
+}
+
+.insta-img {
+  width: 94.5px;
+  height: 94.5px;
+  margin: 0.3rem;
+}
+
+.divider {
+  margin: 2rem 0;
+  border-top: 0.1px solid rgba(255, 255, 255, 0.3);
+}
+
+.footer-copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.fa-twitter {
+  width: 18px;
+}

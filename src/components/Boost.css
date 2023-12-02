@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Quattrocento:wght@700&display=swap");
+
+.boost-section {
+  margin: 5rem 0;
+}
+
+.boost {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.boost img {
+  object-fit: cover;
+  border-radius: 2rem;
+}
+
+.right-box {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 2rem;
+}
+
+.left-box {
+  border-radius: 1rem;
+  width: 50%;
+  z-index: 1;
+  position: relative;
+  font-family: "Quattrocento", serif;
+}
+
+.right-top {
+  border-radius: 1rem;
+  z-index: 1;
+  position: relative;
+}
+
+.right-under {
+  border-radius: 1rem;
+  z-index: 1;
+  position: relative;
+}
+
+.card-text {
+  z-index: 2;
+  position: absolute;
+  top: 5rem;
+  left: 5rem;
+  width: 40%;
+}
+
+.card-title {
+  font-size: 6.8rem;
+  color: white;
+}
+
+.card-title-2 {
+  font-size: 3.2rem;
+  color: white;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.card-desc {
+  font-size: 2rem;
+  color: white;
+  margin: 2rem 0;
+  font-family: "Barlow", sans-serif;
+}
+
+.red-span {
+  color: #d80027;
+}
+
+.dark-span {
+  color: #292929;
+}
+
+.card-btn {
+  font-size: 1.4rem;
+  color: #ce2829;
+  padding: 1.5rem 3rem;
+  border-radius: 5rem;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}

@@ -1,11 +1,11 @@
 import React from "react";
+import Homepage from "./layouts/Homepage";
 
 const App = () => {
   return (
-    <>
-      <h1>Teknolojik Yemekler</h1>
-      <p>Burdaki kodu silip kendi headerınızı ekleyebilirsiniz</p>
-    </>
+    <div>
+      <Homepage />
+    </div>
   );
 };
 export default App;
