@@ -31,3 +31,19 @@ section.category {
   height: 42px;
   margin-right: 1.5rem;
 }
+
+@media only screen and (max-width: 500px) {
+  .categories {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .category-box {
+    width: 30%;
+    font-size: 1.6rem;
+  }
+
+  .category-box img {
+    width: 3rem;
+  }
+}

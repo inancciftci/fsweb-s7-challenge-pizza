@@ -1,11 +1,6 @@
 import React from "react";
-import Homepage from "./layouts/Homepage";
+import Main from "./layout/Main";
 
-const App = () => {
-  return (
-    <div>
-      <Homepage />
-    </div>
-  );
-};
-export default App;
+export default function App() {
+  return <Main />;
+}

@@ -108,3 +108,35 @@ section.top-menus {
 .food-card img:hover {
   scale: 1.05;
 }
+
+@media only screen and (max-width: 500px) {
+  .text-ad {
+    font-size: 2rem;
+  }
+  .title-ad {
+    font-size: 3.6rem;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .category-item {
+    width: 45%;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 2rem;
+    margin: 1rem 0;
+  }
+  .category-item img {
+    width: 3rem;
+  }
+  .menu-title-box {
+    flex-wrap: wrap;
+  }
+  .category-foods {
+    flex-wrap: wrap;
+  }
+  .food-card {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+}

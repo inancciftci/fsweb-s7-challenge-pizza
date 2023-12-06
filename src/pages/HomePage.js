@@ -1,9 +1,9 @@
 import React from "react";
-import Banner from "../components/Banner";
 import Categories from "../components/Categories";
 import Boost from "../components/Boost";
 import Topmenus from "../components/Topmenus";
-import Footer from "../components/Footer";
+import Banner from "../components/Banner";
+import "./HomePage.css";
 
 export default function Homepage() {
   return (
@@ -12,7 +12,6 @@ export default function Homepage() {
       <Categories />
       <Boost />
       <Topmenus />
-      <Footer />
     </div>
   );
 }

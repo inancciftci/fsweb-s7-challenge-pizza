@@ -67,7 +67,7 @@ export default function Footer() {
       <div className="container-xl">
         <div className="footer-copyright">
           <p className="copyright">© 2023 Teknolojik Yemekler.</p>
-          <i class="fa-brands fa-twitter"></i>
+          <i className="fa-brands fa-twitter"></i>
         </div>
       </div>
     </footer>

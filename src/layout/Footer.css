@@ -92,3 +92,29 @@ footer {
 .fa-twitter {
   width: 18px;
 }
+@media only screen and (max-width: 500px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-left {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .footer-left-first {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 0;
+  }
+  .footer-left-second {
+    width: 100%;
+  }
+  .footer-right {
+    width: 100%;
+    display: none;
+  }
+}

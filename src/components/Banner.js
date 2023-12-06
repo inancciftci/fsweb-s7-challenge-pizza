@@ -1,12 +1,16 @@
 import React from "react";
-import "./Banner.css";
-import logo from "./../assets/logo.svg";
 import scrollDown from "../assets/arrow.gif";
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
+import "./Banner.css";
 
 export default function Banner() {
+  let history = useHistory();
+  const clickHandler = () => {
+    history.push("/pizza");
+    window.scrollTo(0, 0);
+  };
   return (
     <div className="banner">
-      <img className="logo" src={logo} alt="" />
       <div className="cta-box">
         <div className="cta-text">
           <span className="firsat-text">fırsatı kaçırma</span>
@@ -14,7 +18,9 @@ export default function Banner() {
           <p className="cta-main-text">Pizza, doyurur</p>
         </div>
         <div className="cta-btn-box">
-          <button className="cta-btn">Acıktım</button>
+          <button onClick={clickHandler} className="cta-btn">
+            Acıktım
+          </button>
         </div>
         <a href="#category">
           <img src={scrollDown} alt="" className="scroll-down" />

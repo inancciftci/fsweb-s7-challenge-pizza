@@ -1,5 +1,5 @@
 .banner {
-  height: 100vh;
+  height: 90vh;
   background-color: #ce2829;
   position: relative;
   background-image: url(./../assets/mvp-banner.png);
@@ -12,7 +12,6 @@
   align-items: center;
   flex-direction: column;
 }
-
 .cta-text {
   color: white;
   text-align: center;
@@ -48,12 +47,14 @@
 }
 
 .cta-btn {
+  cursor: pointer;
   padding: 1rem 5rem;
   border-radius: 20rem;
   font-size: 1.8rem;
   background-color: #fdc913;
   border: none;
   text-transform: uppercase;
+  color: black;
 }
 
 .scroll-down {
@@ -64,4 +65,13 @@
   bottom: 0;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 500px) {
+  .firsat-text {
+    font-size: 2.5rem;
+  }
+  .cta-main-text {
+    font-size: 6rem;
+  }
 }

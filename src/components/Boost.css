@@ -87,3 +87,42 @@
   text-transform: uppercase;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 500px) {
+  .boost {
+    flex-direction: column;
+  }
+
+  .left-box {
+    width: 100%;
+  }
+
+  .right-box {
+    width: 100%;
+  }
+
+  .card-img {
+    width: 100%;
+  }
+
+  .card-title {
+    font-size: 3.6rem;
+  }
+
+  .card-title-2 {
+    font-size: 2rem;
+  }
+  .card-desc {
+    font-size: 1.6rem;
+  }
+
+  .card-text {
+    top: 2rem;
+    left: 2rem;
+  }
+
+  .card-btn {
+    font-size: 1.4rem;
+    padding: 1.4rem;
+  }
+}
