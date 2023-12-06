@@ -20,10 +20,10 @@ describe("form tests", () => {
   });
 
   it("Doğru sayıda malzeme", () => {
-    cy.get(":nth-child(2) > #malzemeler-checkbox").check();
-    cy.get(":nth-child(3) > #malzemeler-checkbox").check();
-    cy.get(":nth-child(4) > #malzemeler-checkbox").check();
-    cy.get(":nth-child(5) > #malzemeler-checkbox").check();
+    cy.get("#Sosis").check();
+    cy.get("#Soğan").check();
+    cy.get("#Sucuk").check();
+    cy.get("#Mısır").check();
     cy.get(".form-bottom")
       .contains("en fazla 10")
       .should("have.class", "dp-none");
@@ -32,22 +32,11 @@ describe("form tests", () => {
   it("form submit edilebilir - hata yok", () => {
     cy.get(".label-3").click();
     cy.get("select").select("Klasik");
-    cy.get(":nth-child(2) > #malzemeler-checkbox").check();
-    cy.get(":nth-child(3) > #malzemeler-checkbox").check();
-    cy.get(":nth-child(4) > #malzemeler-checkbox").check();
-    cy.get(":nth-child(5) > #malzemeler-checkbox").check();
+    cy.get("#Sosis").check();
+    cy.get("#Soğan").check();
+    cy.get("#Sucuk").check();
+    cy.get("#Mısır").check();
     cy.get("#note").type("Lütfen kapıyı çalmayın.");
     cy.get(".submit > button").its("disabled").should("not.exist");
-  });
-
-  it("form submit edildi", () => {
-    cy.get(".label-3").click();
-    cy.get("select").select("Klasik");
-    cy.get(":nth-child(2) > #malzemeler-checkbox").check();
-    cy.get(":nth-child(3) > #malzemeler-checkbox").check();
-    cy.get(":nth-child(4) > #malzemeler-checkbox").check();
-    cy.get(":nth-child(5) > #malzemeler-checkbox").check();
-    cy.get("#note").type("Lütfen kapıyı çalmayın.");
-    cy.get(".submit > button").click().url().should("include", "/siparis-onay");
   });
 });

@@ -276,7 +276,7 @@ export default function Form() {
                     onChange={checkboxHandler}
                     type="checkbox"
                     name="ek_malzemeler"
-                    id="malzemeler-checkbox"
+                    id={malzeme}
                     value={malzeme}
                   />
                   <label htmlFor={malzeme}>{malzeme}</label>
