@@ -4,22 +4,26 @@ import { useParams } from "react-router-dom/cjs/react-router-dom.min";
 import "./ConfirmationPage.css";
 
 export default function ConfirmationPage() {
+  // getting the id of the submitted order
+
   const { orderId } = useParams();
 
   const Capitalize = (str) => {
     return str.charAt(0).toUpperCase() + str.slice(1);
   };
 
+  // using the orderId to get the siparis and saving to siparis state
+
   const [siparis, setSiparis] = useState({});
 
-  useEffect(() => {
-    axios
-      .get(
-        "https://656ba8eadac3630cf7284ca5.mockapi.io/api/orders/orders/" +
-          orderId
-      )
-      .then((res) => setSiparis(res.data));
-  }, [orderId]);
+  // useEffect(() => {
+  //   axios
+  //     .get(
+  //       "https://656ba8eadac3630cf7284ca5.mockapi.io/api/orders/orders/" +
+  //         orderId
+  //     )
+  //     .then((res) => setSiparis(res.data));
+  // }, [orderId]);
 
   return (
     <section className="confirmationPage">

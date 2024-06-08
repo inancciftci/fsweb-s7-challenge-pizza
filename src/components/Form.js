@@ -65,20 +65,20 @@ export default function Form() {
 
   let history = useHistory();
 
-  const [siparisler, setSiparisler] = useState([]);
-
   // fetch Orders
 
-  const fetchOrders = () => {
-    axios
-      .get("https://656ba8eadac3630cf7284ca5.mockapi.io/api/orders/orders")
-      .then((res) => setSiparisler(res.data));
-  };
-  useEffect(() => {
-    fetchOrders();
-  }, []);
+  const [siparisler, setSiparisler] = useState([]);
 
-  // malzemeler
+  // const fetchOrders = () => {
+  //   axios
+  //     .get("https://656ba8eadac3630cf7284ca5.mockapi.io/api/orders/orders")
+  //     .then((res) => setSiparisler(res.data));
+  // };
+  // useEffect(() => {
+  //   fetchOrders();
+  // }, []);
+
+  // malzemeler & checkbox handling
 
   const [ekMalzeme, setEkMalzeme] = useState([]);
 
@@ -112,7 +112,7 @@ export default function Form() {
     }
   };
 
-  // siparis
+  // siparis & input change handling
 
   const productPrice = 85.5;
 
@@ -140,9 +140,13 @@ export default function Form() {
     });
   };
 
+  // form validation check
+
   useEffect(() => {
     formSchema.isValid(siparis).then((valid) => setFormValid(valid));
   }, [siparis, formSchema]);
+
+  // submit handling
 
   const submitHandler = (e) => {
     e.preventDefault();
@@ -334,8 +338,8 @@ export default function Form() {
                   Sipariş Ver
                 </button>
                 <p className={`error ${!formValid ? "visible" : null}`}>
-                  <i class="fa-solid fa-circle-exclamation"></i> Lütfen zorunlu
-                  alanlara dikkat ediniz.
+                  <i className="fa-solid fa-circle-exclamation"></i> Lütfen
+                  zorunlu alanlara dikkat ediniz.
                 </p>
                 <p
                   className={`error-2 ${
